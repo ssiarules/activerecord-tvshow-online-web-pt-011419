@@ -17,7 +17,7 @@ class Show < ActiveRecord::Base
   end 
   
   def self.ratings_sum
-    Show.sum("rating =?", self.highest_rating)
+    Show.sum(SELECT * FROM )
   end 
   
 end
