@@ -17,7 +17,7 @@ class Show < ActiveRecord::Base
   end 
   
   def self.ratings_sum
-    Show.sum(SELECT * FROM shows WHERE  )
+    Show.sum(SELECT * FROM shows WHERE rating = "?" )
   end 
   
 end
